@@ -84,11 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
     datosLocalStorage = JSON.parse(localStorage.getItem("data")); // se parsean y obtienen los datos de LC. se guardan en array.
 
     console.log(datosLocalStorage);
+      // se llama a la funcióin mostrarClima y se pasa como parámetro los datos parseados de LS.
+
+    mostrarClima(datosLocalStorage);
   }
 
-  // se llama a la funcióin mostrarClima y se pasa como parámetro los datos parseados de LS.
 
-  mostrarClima(datosLocalStorage);
 });
 
 // funcion para mostrar datos de la api, se pasa parametro, reciben el json de la respuesta de la api.
@@ -196,13 +197,19 @@ function initMap(latitud, longitud) {
   });
 }
 
+
 // la función de mostrar clima que recibe los datos de local storage y carga con el evento de carga de página.
 
 function mostrarClima(data) {
-  tituloHistorico.innerHTML = `  <p class="fs-2 text-blue my-4"> Resultados históricos
 
-  </p>
-  `;
+
+    tituloHistorico.innerHTML = `  <p class="fs-2 text-blue my-4"> Resultados históricos
+
+    </p>
+    `;
+    
+  
+
 
   data.forEach((item) => {
     local.innerHTML +=
