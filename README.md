@@ -9,6 +9,8 @@ Se realiza según consigna trabajo sobre la API, open weather map y se agrega go
 
 ( ✨ No le des muchos clicks que aún cobro en pesos)
 
+Aclaraciones: da un error en consola la api de google, porque no encuentra el div con su id de map, este div lo creo dentro el js. Fue la única manera de controlar el tiempo de respuesta y que se vea armonioso a la vista. Al hacer la búsqueda trae las dos info a la par. 
+
 
 | html5 | | Bootstrap | | CSS | | Javascript | 
 
